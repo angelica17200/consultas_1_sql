@@ -53,3 +53,12 @@ o se puede utilizar el operador `OR`
 `SELECT * FROM cliente WHERE identificacion<=110 AND ciudad = 'cali'`
 
 ![consultas 5](consultas5.png "consultas 5")
+
+
+### Consulta No. 6
+
+6. Si se desea obtener los registros cuyos nnombres empiencen por la letra 'A', se debe utilizar el opperador `LIKE`que utiliza los patrones `%`(todos) y `_`(caracter).
+
+`SELECT * FROM cliente WHERE nombre LIKE 'A%'`
+
+![consultas 6](consultas6.png "consultas 6")
