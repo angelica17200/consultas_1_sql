@@ -70,3 +70,19 @@ o se puede utilizar el operador `OR`
 ` SELEC * FROM cliente WHERE nombre LIKE '%A%'`
 
 ![consultas 7](consultas7.png "consultas 7")
+
+### Consulta NO. 8 
+
+8. se desea tener los registros donde la cuarta letra del nombre cliente sea una 'a'.
+
+`SELECT * FROM cliente WHERE nombre LIKE '___a'`
+
+![consultas 8](consultas8.png "consultas 8")
+
+### Consultas 9 
+
+9. Si sedea obtener los registros cuya identificacion este entre el intervalo 110 y 150, se debe utilzar `BETWEEN, que sirve para especificar un intervalo de valores. 
+
+`SELECT * FROM cliente WHERE identificacion BETWEEN 110 AND 150`
+
+![consultas 9](consultas9.png "consultas 9")
