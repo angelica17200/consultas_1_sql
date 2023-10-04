@@ -131,3 +131,29 @@ o se puede utilizar el operador `OR`
 ### Modelo Entidad - relacion
 
 ![modelo](modelo.png "modelo")
+
+
+### TABLA: PERIODO
+
+
+### MODELO ENTINDAD - RELACION 
+
+
+### OPERADOR INNER JOIN 
+-Permite obtener datos de dos o mas tablas.
+- Cuando se realiza la concentración de las tablas, no necesariamente se deben mostrar todos los datos de las tablas.
+- Su formato es:
+
+`SELECT tabla1.campo, tabla2.campo, ... FROM tabla_principal INNERJOIN tabla_secundaria ON campo_comun_tabla1 = campo_comun_tabla2`
+
+1. para vusiaalizar los campos identificacion, nombre, apellidos de la tabla cliente y no_pedido, fecha_compra_, fecha_vencimiento y observacion de la tabla pedido, se debe realizar la siguiente instrucción:
+
+`SELECT cliente.identificacion, cliente.nombre, cliente.apellidos, pedido.no_pedido, pedido.fecha_compra, pedido.fecha_vencimiento, pedido.observacion FROM cliente INNER JOIN pedido ON cliente.identificacion = pedido.ide_cliente `
+
+
+![inner join](innerjoin1.png "inner join 1")iente INNER JOIN pedido ON cliente.identificacion 
+
+2. Para visualizar todos los campos de las tablas cliente y pediddo donde identificacion sea mayor que 100.
+
+`SELECT cliente,*, pedido * FROM cliente INNER JOIN pedido ON cliente.identificacion = pedido.iden_cliente WHERE cliente.identificacion `
+
